@@ -1,0 +1,19 @@
+$colors: (
+    primary-color: #0C0C0C,
+    secondary-color: #8DD446,
+    white: #fff,
+    black: #000,
+   gray: rgba(101, 101, 101, 0.5),
+    border-color: #BCBCBC,
+    dark-black: #555,
+    home-color: #D9D9D9,
+    mild-white: #F5F5F5,
+    text-color: #4B4B4B,
+    border-color1: #D6D6D6,
+    border-color2: #313131,
+    service-background: #F9F9F9
+);
+
+@function color($color-name) {
+    @return map-get($colors, $color-name)
+}
